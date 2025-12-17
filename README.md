@@ -8,7 +8,7 @@ To get started, simply install the required dependencies using pip.
 python3.9 -m venv bayesian-design-opt
 
 # Windows
-Bayesight\Scripts\activate
+bayesian-design-opt\Scripts\activate
 # macOS/Linux
 source bayesian-design-opt/bin/activate
 

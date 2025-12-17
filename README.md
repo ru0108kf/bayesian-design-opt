@@ -2,6 +2,12 @@
 ### abstruct
 Recent advancements in CAD applications have improved access to parametric design, however, their optimization methods predominantly emphasize quantitative metrics such as environmental or structural performance. Consequently, for subjective aspects, designers rely on manual "slider" adjustment, which is often inefficient, susceptible to cognitive biases, and can lead to confinement within local optima. This study proposes a human-centric computational design framework that integrates human-in-the-loop and Bayesian optimization (BO) to incorporate subjective evaluation into the design process. We demonstrated this framework using a pavilion design task defined by six parameters and evaluated it via a user study (N = 40) comparing the proposed "Bayesian method" with the conventional "slider-based" method. Results showed that the Bayesian method outperformed the slider-based method in terms of final design selection, overall satisfaction, and perceived design diversity. It helped users discover their latent preferences by exploring parameter regions that might have been overlooked manually. Furthermore, the "transparency" of the BO process was essential for fostering user trust and maintaining their sense of agency. This approach is a promising interactive tool for facilitating exploratory design in the early stages, particularly for users with uncertain preferences.
 
+**Note:** The code in this repository was created for research purposes. Please note that it contains experimental features and may not work as intended in all environments, but I hope you find it useful as a reference.
+
+## Prerequisites
+* Rhino 7 or 8 / Grasshopper
+* Python 3.9
+
 ## Getting Started
 
 To get started, simply install the required dependencies using pip.
@@ -14,10 +20,10 @@ bayesian-design-opt\Scripts\activate
 # macOS/Linux
 source bayesian-design-opt/bin/activate
 
-pip install requirements.txt
+pip install -r requirements.txt
 ```
 
-anaconda
+Uning anaconda
 
 ```bash
 conda create -n bayesian-design-opt python=3.9

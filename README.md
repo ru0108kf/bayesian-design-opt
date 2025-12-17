@@ -1,16 +1,16 @@
-# Bayesight
+# bayesian design opt
 
 ## Getting Started
 
 To get started, simply install the required dependencies using pip.
 
 ```bash
-python3.9 -m venv Bayesight
+python3.9 -m venv bayesian-design-opt
 
 # Windows
 Bayesight\Scripts\activate
 # macOS/Linux
-source Bayesight/bin/activate
+source bayesian-design-opt/bin/activate
 
 pip install requirements.txt
 ```
@@ -18,9 +18,9 @@ pip install requirements.txt
 anaconda
 
 ```bash
-conda create -n Bayesight python=3.9
+conda create -n bayesian-design-opt python=3.9
 
-conda activate Bayesight
+conda activate bayesian-design-opt
 
 conda install requirements.txt
 ```

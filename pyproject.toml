@@ -1,0 +1,15 @@
+[project]
+name = "bayesian-design-opt"
+version = "0.1.0"
+requires-python = "==3.9.*"
+dependencies = [
+    "ghhops-server==1.5.5",
+    "flask==3.1.0",
+    "torch==2.3.0",
+    "botorch==0.10.0",
+    "gpytorch==1.11.0",
+    "matplotlib==3.8.4",
+    "numpy==1.26.4",
+    "japanize-matplotlib==1.1.3",
+    "python-dotenv>=1.0.0",
+]

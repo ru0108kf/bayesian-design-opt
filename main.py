@@ -5,6 +5,9 @@ from typing import Optional
 import warnings
 import json
 import torch
+from dotenv import load_dotenv
+
+load_dotenv()
 import matplotlib
 matplotlib.use('Agg')
 import matplotlib.pyplot as plt
@@ -21,7 +24,7 @@ RAW_SAMPLES = 512
 bounds = torch.tensor([[0.0] * 6, [1.0] * 6], device=device, dtype=dtype)
 
 # ファイルパス
-SAVE_FOLDER_PATH = r'C:\Users\archi\Desktop\Bayesight-main\save_folder'
+SAVE_FOLDER_PATH = os.environ['SAVE_FOLDER_PATH']
 TENSOR_X_DATA_PATH = os.path.join(SAVE_FOLDER_PATH, 'tensor_X_data.pt')
 JSON_Y_DATA_PATH = os.path.join(SAVE_FOLDER_PATH, 'json_Y_data.json')
 TENSOR_CON_DATA_PATH = os.path.join(SAVE_FOLDER_PATH, 'tensor_con_data.pt')
@@ -286,6 +289,17 @@ def single_model_loop(Y: float, run_execution: bool, Create: bool):
             fig.tight_layout(rect=[0, 0.15, 1, 1.02])
             plt.savefig(os.path.join(IMG_PATH, f'{highlight_point_number}.png'))
             plt.close(fig)
+
+@hops.component(
+    "/get_img_path",
+    name="Get Image Path",
+    description="画像ファイルパスを返す",
+    outputs=[
+        hs.HopsString("Path", "P", "画像ファイルパス"),
+    ]
+)
+def get_img_path():
+    return os.path.join(IMG_PATH)
 
 if __name__ == '__main__':
     app.run(debug=True)

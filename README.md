@@ -11,6 +11,8 @@ Recent advancements in CAD applications have improved access to parametric desig
 * Rhino 7 or 8 / Grasshopper
 * Python 3.9
 * [uv](https://docs.astral.sh/uv/getting-started/installation/)
+* [Hops](https://www.food4rhino.com/en/app/hops)
+* [Human-UI](https://www.food4rhino.com/en/app/human-ui)
 
 ## Getting Started
 

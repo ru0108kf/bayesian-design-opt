@@ -128,4 +128,4 @@ AIを自然に組み込む方法を示しました。
 
 ---
 
-> 詳細は [論文ドキュメント](paper.md) を参照してください。
+> 詳細は [論文](https://papers.cumincad.org/data/works/att/caadria2026_198.pdf) を参照してください。
